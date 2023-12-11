@@ -7,19 +7,14 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using System.Threading.Tasks;
 using TicketEase.Application.DTO;
-using TicketEase.Application.DTO.Manager;
-using TicketEase.Application.Interfaces.Repositories;
 using TicketEase.Application.Interfaces.Services;
-using TicketEase.Common.Utilities;
 using TicketEase.Domain;
 using TicketEase.Domain.Entities;
-using static Org.BouncyCastle.Math.EC.ECCurve;
 
 namespace TicketEase.Application.ServicesImplementation
 {
-	public class AuthenticationService : IAuthenticationService
+    public class AuthenticationService : IAuthenticationService
 	{
 		private readonly UserManager<AppUser> _userManager;
 		private readonly SignInManager<AppUser> _signInManager;
