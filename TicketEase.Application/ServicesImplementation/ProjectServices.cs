@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
-using TicketEase.Application.DTO;
 using TicketEase.Application.DTO.Project;
 using TicketEase.Application.Interfaces.Repositories;
 using TicketEase.Application.Interfaces.Services;
@@ -11,7 +10,7 @@ using TicketEase.Domain.Entities;
 
 namespace TicketEase.Application.ServicesImplementation
 {
-	public class ProjectServices : IProjectServices
+    public class ProjectServices : IProjectServices
 	{
 		private readonly IUnitOfWork _unitOfWork;
 		private readonly ILogger<ProjectServices> _logger;
